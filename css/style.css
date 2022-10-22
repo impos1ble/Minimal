@@ -317,3 +317,6 @@ footer form .container-footer:nth-child(2) input{
 :-ms-input-placeholder{
     color: #FFFFFF;
 }
+.lorem-p{
+    color: red;
+}
