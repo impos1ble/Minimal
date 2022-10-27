@@ -172,10 +172,7 @@ color: #333333;
 .recent-projects{
     padding-top: 79px;
     background: #F5F5F5;
-    padding-bottom: 89px;
-}
-.art-white{
-    background-color: #FFFFFF;
+    padding-bottom: 69px;
 }
 .recent-projects h4{
     font-family: 'montserratregular';
@@ -201,6 +198,7 @@ padding-bottom: 21px;
 .recent-projects article{
     margin-left: 20px;
     margin-bottom: 20px;
+    background-color: #FFFFFF;
 }
 
 
