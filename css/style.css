@@ -10,7 +10,6 @@
     font-style: normal;
 
 }
-
 *{
     padding: 0;
     margin: 0;
@@ -52,21 +51,13 @@ header nav li a:hover{
 }
 
 /*Sections*/
-/*На них не обращай внимания*/
 .main-banner{
     background-image: url('../img/bg-main.jpg');
     background-size:cover;
-    height: 391px;
+    min-height: 391px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 101px;
 }
-.banner-container{
-    max-width: 672px;
-    text-align: center;
-}
-h1{
+.main-banner h1{
     font-family: 'montserratregular';
     font-style: normal;
     font-weight: 400;
@@ -76,25 +67,17 @@ h1{
     text-transform: uppercase;
     color: #FFFFFF;  
 }
-.is{
-    font-family: 'montserratregular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 43px;
-    line-height: 55px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF; 
-}
-.hr-white{
-    height: 2px;
+.main-banner h1:after{
+    content: "";
+    display: block;
     width: 80px;
-    background: #FFFFFF;
+    height: 2px;
+    background-color: #FFFFFF;
     margin: auto;
     margin-top: 28px;
-    margin-bottom: 25px;  
+    margin-bottom: 25px;
 }
-.let-us{
+.main-banner p{
     font-family: 'Vollkorn', serif;
     font-style: normal;
     font-weight: 400;
@@ -103,96 +86,100 @@ h1{
     text-align: center;
     color: rgba(255, 255, 255, 0.81); 
 }
-.minimalist-section{
+
+.main-banner-description{
     background-color: #FEFEC9;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0px 0px 60px;
-}
-.minimalist-container{
-    max-width: 940px;
-    margin: auto;
+    padding: 60px 0px;
+
     text-align: center;
 }
-.img-x{
-    margin-top: -26px;
-    display: inline-block;
-    transition: 1.2s;
-}
-.img-x:hover{
-    transform: rotate(360deg);  
-}
-.minimalist-p{
-    font-family: 'Vollkorn', serif;
-    padding: 34px 0px 54px;
+.main-banner-description p{
+    font-family:'Vollkorn', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
     color: #47474F;
+    margin-bottom: 39px;
 }
-.button-get{
-    background-color: transparent;
-    border: 1px solid #47474F;
-    border-bottom: 2px solid #47474F;
-    font-family: 'Vollkorn', serif;
+.main-banner-description a{
+    font-family:'Vollkorn', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     color: #47474F;
+    display: inline-block;
     padding: 13px 34px 20px;
-    transition: 0.3s;
+    border: solid 1px #47474F;
+    border-bottom: solid 2px #47474F;
+    text-decoration: none;
 }
-.button-get:hover{
-    text-decoration: underline;
-    font-size: 25px;
-}
-.how-section{
+
+.brands{
     padding: 79px 0px 74px;
     background: #fff;
     text-align: center;
 }
-.how-container{
-    max-width: 940px;
-    margin: auto;
+.brands h2, .recent-projects h2{
+font-family: 'montserratregular';
+font-style: normal;
+font-weight: 400;
+font-size: 23px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+color: #333333;
 }
-.how-h2{
-    padding-top: 10px;
-    font-family: 'montserratregular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23px;
-    line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #333333;
-}
-.hr{
-    margin-top: 28px;
+.brands h2:after, .recent-projects h2:after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
     background: rgba(0, 0, 0, 0.09);
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 43px;
 }
-.target,.design-solution,.track{
-    width: 300px;
+.container-img{
+    margin-left: 20px;
     background: #F5F5F5;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 86px;
-    margin-right: 10px; 
-    margin-top: 43px;
+    padding: 50px 87px 50px 86px;
 }
-
-.how-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.brands h4{
+font-family: 'montserratregular';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: uppercase;
+color: #333333;
+padding: 38px 0px 20px;
 }
-h3{
-    padding-bottom: 20px;
+.brands p{
+margin-left: 30px;
+font-family: 'Vollkorn', serif;
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+text-align: center;
+color: #333333;
+}
+.recent-projects{
+    padding-top: 79px;
+    background: #F5F5F5;
+    padding-bottom: 89px;
+}
+.img-content{
+    background-color: #FFFFFF;
+    width: 300px;
+    height: 84px;
+}
+.recent-projects h4{
     font-family: 'montserratregular';
     font-style: normal;
     font-weight: 400;
@@ -201,17 +188,21 @@ h3{
     text-align: center;
     text-transform: uppercase;
     color: #333333;
+    padding: 19px 0px 4px;
 }
-.p-how{
-    padding-right: 28px;
-    padding-top: 38px;
-    font-family: 'Vollkorn', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    text-align: center;
-    color: #333333;
+.recent-projects p{
+font-family: 'Vollkorn', serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+color: #333333;
+padding-bottom: 21px;
+}
+.recent-projects article{
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 
