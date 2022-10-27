@@ -143,8 +143,10 @@ color: #333333;
     margin-top: 28px;
     margin-bottom: 43px;
 }
+.brands article{
+    max-width: 300px;
+}
 .container-img{
-    margin-left: 20px;
     background: #F5F5F5;
     padding: 50px 87px 50px 86px;
 }
@@ -196,7 +198,6 @@ color: #333333;
 padding-bottom: 21px;
 }
 .recent-projects article{
-    margin-left: 20px;
     margin-bottom: 20px;
     background-color: #FFFFFF;
 }
