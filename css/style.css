@@ -15,8 +15,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    padding-top: 106px;
+}
 header{
     padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    background-color: #FFFFFF;
+    top: 0;
+    z-index: 9;
 }
 .container{
     max-width: 940px;
