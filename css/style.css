@@ -361,7 +361,7 @@ header nav li a:hover {
 .our-team .danny li::before {
     content: "";
     display: inline-block;
-    background-image: url(../img/twitter.svg);
+    background-image: url(../img/instagram.svg);
     width: 14px;
     height: 12px;
     margin-right: 13px;
@@ -369,15 +369,15 @@ header nav li a:hover {
 }
 
 .our-team .danny li:nth-child(2)::before {
-    background-image: url(../img/linkedin.svg);
+    background-image: url(../img/twitter.svg);
 }
 
 .our-team .danny li:nth-child(3)::before {
-    background-image: url(../img/Mail_1_x2C__Envelope_1.svg);
+    background-image: url(../img/Behance.svg);
 }
 
 .our-team .danny li:nth-child(4)::before {
-    background-image: url(../img/Mail_1_x2C__Envelope_1.svg);
+    background-image: url(../img/Dribbble.svg);
 }
 
 .our-team .danny li:nth-child(5)::before {
@@ -387,7 +387,7 @@ header nav li a:hover {
 .our-team .lisa li::before {
     content: "";
     display: inline-block;
-    background-image: url(../img/twitter.svg);
+    background-image: url(../img/facebook.svg);
     width: 14px;
     height: 12px;
     margin-right: 13px;
@@ -395,7 +395,7 @@ header nav li a:hover {
 }
 
 .our-team .lisa li:nth-child(2)::before {
-    background-image: url(../img/linkedin.svg);
+    background-image: url(../img/twitter.svg);
 }
 
 .our-team .lisa li:nth-child(3)::before {
