@@ -49,6 +49,11 @@ header .burger .menu-btn {
   cursor: pointer;
   z-index: 2;
 }
+@media screen and (max-width: 3000px) {
+  header .burger .menu-btn {
+    display: none;
+  }
+}
 header .burger .menu-btn .line {
   padding: 0;
   width: 30px;
@@ -86,15 +91,13 @@ header .burger .menu-btn .line.line--3.line-cross {
 }
 header .burger .nav-links {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  transform: translateX(-100px);
+  justify-content: space-around;
   transition: all 900ms cubic-bezier(0.9, 0, 0.33, 1);
 }
 header .burger .nav-links.fade-in {
@@ -517,6 +520,9 @@ header .desktop li a:hover {
   color: #333333;
   padding-bottom: 20px;
 }
+.let .mail li:nth-child(2) {
+  margin-bottom: 20px;
+}
 .let .social {
   font-family: "Vollkorn";
   font-style: normal;
@@ -528,6 +534,9 @@ header .desktop li a:hover {
 .let .social li {
   padding-bottom: 11px;
 }
+.let .social li a {
+  color: #212121;
+}
 .let .social li::before {
   content: "";
   display: inline-block;
@@ -538,6 +547,7 @@ header .desktop li a:hover {
 }
 .let .social li:nth-child(2)::before {
   background-image: url(../img/twitter.svg);
+  height: 12px;
 }
 .let .social li:nth-child(3)::before {
   background-image: url(../img/linkedin.svg);
@@ -555,6 +565,7 @@ header .desktop li a:hover {
 
 .location-mail-heart img {
   padding-bottom: 26px;
+  height: 100px;
 }
 
 /* ----------- footer ------------------------------*/

@@ -58,6 +58,10 @@ header {
         border-radius: 0% 0% 100% 50%;
 
         .menu-btn {
+            @include max-screen(3000px) {
+                display: none;
+            }
+
             position: absolute;
             top: 10%;
             right: 5%;
@@ -111,15 +115,14 @@ header {
 
         .nav-links {
             position: absolute;
-            left: 0;
+            right: 0;
             top: 0;
             width: 100%;
             height: 100%;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            transform: translateX(-100px);
+            justify-content: space-around;
+            // transform: translateX(-100px);
             transition: all 900ms cubic-bezier(.9, 0, .33, 1);
 
             &.fade-in {
@@ -558,6 +561,7 @@ header {
     padding: 79px 0 75px;
     text-align: center;
 
+
     h2 {
         font-family: $main_font;
         font-style: normal;
@@ -596,6 +600,14 @@ header {
         padding-bottom: 20px;
     }
 
+    .mail {
+        li {
+            &:nth-child(2) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
     .social {
         font-family: 'Vollkorn';
         font-style: normal;
@@ -606,6 +618,10 @@ header {
 
         li {
             padding-bottom: 11px;
+
+            a {
+                color: #212121;
+            }
 
             &::before {
                 content: "";
@@ -619,6 +635,7 @@ header {
             &:nth-child(2) {
                 &::before {
                     background-image: url(../img/twitter.svg);
+                    height: 12px;
                 }
             }
 
@@ -646,6 +663,7 @@ header {
 
     img {
         padding-bottom: 26px;
+        height: 100px;
     }
 }
 
