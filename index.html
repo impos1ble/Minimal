@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -21,7 +21,31 @@
             <a href="#">
                 <img src="img/logo.svg" alt="logo">
             </a>
-            <nav>
+            <nav class="burger">
+                <div class="menu-btn">
+                    <div class="line line--1"></div>
+                    <div class="line line--2"></div>
+                    <div class="line line--3"></div>
+                </div>
+
+                <div class="nav-links desktop">
+                    <ul id="navbar">
+                        <li>
+                            <a href="" class="link">process</a>
+                        </li>
+                        <li>
+                            <a href="" class="link">project</a>
+                        </li>
+                        <li>
+                            <a href="" class="link">team</a>
+                        </li>
+                        <li>
+                            <a href="" class="link">contact</a>
+                        </li>
+                </div>
+            </nav>
+
+            <!-- <nav class="desktop">
                 <ul id="navbar">
                     <li>
                         <a href="#">process</a>
@@ -36,7 +60,7 @@
                         <a href="#">contact</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
         </div>
     </header>
 
@@ -166,15 +190,21 @@
                         <p>
                             Founder
                         </p>
-                        <ul class="ron">
+                        <ul>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/twitter.svg" alt="twitter">
+                                </li>
                             </a>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/linkedin.svg" alt="linkedin">
+                                </li>
                             </a>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/Mail_1_x2C__Envelope_1.svg" alt="mail">
+                                </li>
                             </a>
                         </ul>
                     </article>
@@ -186,17 +216,22 @@
                         <p>
                             Marketing
                         </p>
-                        <ul class="julia">
+                        <ul>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/twitter.svg" alt="twitter">
+                                </li>
                             </a>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/linkedin.svg" alt="linkedin">
+                                </li>
                             </a>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/Mail_1_x2C__Envelope_1.svg" alt="mail">
+                                </li>
                             </a>
-                        </ul>
                     </article>
                     <article>
                         <div class="container-img-our">
@@ -206,21 +241,31 @@
                         <p>
                             Designer
                         </p>
-                        <ul class="danny">
+                        <ul>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/instagram.svg" alt="instagram">
+                                </li>
                             </a>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/twitter.svg" alt="twitter">
+                                </li>
                             </a>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/Behance.svg" alt="behance">
+                                </li>
                             </a>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/Dribbble.svg" alt="dribbble">
+                                </li>
                             </a>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/Mail_1_x2C__Envelope_1.svg" alt="mail">
+                                </li>
                             </a>
                         </ul>
                     </article>
@@ -232,15 +277,21 @@
                         <p>
                             Developer
                         </p>
-                        <ul class="lisa">
+                        <ul>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/facebook.svg" alt="facebook">
+                                </li>
                             </a>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/twitter.svg" alt="twitter">
+                                </li>
                             </a>
                             <a href="#">
-                                <li></li>
+                                <li>
+                                    <img src="img/Mail_1_x2C__Envelope_1.svg" alt="mail">
+                                </li>
                             </a>
                         </ul>
                     </article>
@@ -271,13 +322,51 @@
             </div>
         </section>
 
-        <section>
-            <div class="let-container">
-                <div class="container">
-                    <h2>LET’s Get in touch</h2>
-                    <div class="d-flex">
-
-                    </div>
+        <section class="let">
+            <div class="container ">
+                <h2>LET’s Get in touch</h2>
+                <div class="d-flex f-wrap">
+                    <article>
+                        <div class="location-mail-heart">
+                            <img src="img/location.svg" alt="location">
+                            <h4>MEET US IN PERSON</h4>
+                            <ul>
+                                <li>8776 Juniper Street</li>
+                                <li>Unit #204</li>
+                                <li>Merriweather, Ontorio</li>
+                                <li>Canada</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="location-mail-heart">
+                            <img src="img/mail.svg" alt="mail">
+                            <h4>The traditional way</h4>
+                            <ul>
+                                <li>Email us</li>
+                                <li>contact@minimal.com</li>
+                                <li>Contact form</li>
+                                <li>Scroll down</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="location-mail-heart">
+                            <img src="img/heart.svg" alt="heart">
+                            <h4>MEET US IN PERSON</h4>
+                            <ul class="social">
+                                <a href="#">
+                                    <li>Facebook</li>
+                                </a>
+                                <a href="#">
+                                    <li>Twitter</li>
+                                </a>
+                                <a href="#">
+                                    <li>Linkdin</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
