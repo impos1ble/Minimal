@@ -40,18 +40,21 @@ header .burger {
   transition: all 800ms cubic-bezier(0.8, 0, 0.33, 1);
   border-radius: 0% 0% 100% 50%;
 }
-header .burger .menu-btn {
-  position: absolute;
-  top: 10%;
-  right: 5%;
-  padding: 0;
-  width: 30px;
-  cursor: pointer;
-  z-index: 2;
-}
 @media screen and (max-width: 3000px) {
   header .burger .menu-btn {
     display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .burger .menu-btn {
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    right: 5%;
+    padding: 0;
+    width: 30px;
+    cursor: pointer;
+    z-index: 2;
   }
 }
 header .burger .menu-btn .line {
@@ -72,16 +75,16 @@ header .burger .menu-btn .line.line--1.line-cross {
   background: rgba(0, 0, 0, 0.6);
 }
 header .burger .menu-btn .line.line--2 {
-  width: 28px;
+  width: 30px;
   transform: translateX(0);
 }
 header .burger .menu-btn .line.line--2.line-fade-out {
-  width: 28px;
+  width: 30px;
   transform: translate(30px);
   opacity: 0;
 }
 header .burger .menu-btn .line.line--3 {
-  width: 20px;
+  width: 30px;
   transform: rotate(0) translateY(0);
 }
 header .burger .menu-btn .line.line--3.line-cross {
@@ -120,8 +123,39 @@ header .burger.nav-open {
   border-radius: 0% 0% 0% 0%;
   background: rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 500px) {
+  header .burger.nav-open .desktop #navbar {
+    display: block;
+    transform: translatey(68%);
+    position: absolute;
+    top: -82px;
+    right: -17px;
+  }
+  header .burger.nav-open .desktop #navbar li {
+    display: block;
+    background-color: #FFFFFF;
+    padding: 2px;
+    margin-top: 5px;
+    border-radius: 10px 10px 10px 20px;
+    -webkit-box-shadow: -2px 5px 5px 2px #7EC4BD;
+    box-shadow: -2px 5px 5px 2px #7EC4BD;
+    text-shadow: 2px 2px 5px #7EC4BD;
+    text-align: center;
+    font-size: 10px;
+  }
+}
 header .desktop li {
   margin-left: 34px;
+}
+@media screen and (max-width: 700px) {
+  header .desktop li {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .desktop li {
+    display: none;
+  }
 }
 header .desktop li a {
   font-family: "montserratregular";
@@ -137,6 +171,11 @@ header .desktop li a {
 }
 header .desktop li a:hover {
   transform: rotate(360deg);
+}
+@media screen and (max-width: 500px) {
+  header .desktop li a:hover {
+    transform: rotate(0deg);
+  }
 }
 
 .container {
@@ -172,6 +211,24 @@ header .desktop li a:hover {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (max-width: 700px) {
+  .main-banner h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .main-banner h1 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main-banner h1 {
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
 .main-banner h1::after {
   content: "";
