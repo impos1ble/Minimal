@@ -561,7 +561,6 @@ header {
     padding: 79px 0 75px;
     text-align: center;
 
-
     h2 {
         font-family: $main_font;
         font-style: normal;
@@ -660,10 +659,12 @@ header {
 }
 
 .location-mail-heart {
+    .cont-lmh {
+        min-height: 65px;
+    }
 
     img {
         padding-bottom: 26px;
-        height: 100px;
     }
 }
 

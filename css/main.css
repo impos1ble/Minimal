@@ -563,9 +563,11 @@ header .desktop li a:hover {
   list-style: none;
 }
 
+.location-mail-heart .cont-lmh {
+  min-height: 65px;
+}
 .location-mail-heart img {
   padding-bottom: 26px;
-  height: 100px;
 }
 
 /* ----------- footer ------------------------------*/
