@@ -167,13 +167,11 @@ header {
                             background-color: #FFFFFF;
                             padding: 2px;
                             margin-top: 5px;
-                            border-radius: 10px 10px 10px 20px;
-                            -webkit-box-shadow: -2px 5px 5px 2px #7EC4BD;
-                            box-shadow: -2px 5px 5px 2px #7EC4BD;
+                            -webkit-box-shadow: 2px 5px 5px 2px #7EC4BD;
+                            box-shadow: 2px 5px 5px 2px #7EC4BD;
                             text-shadow: 2px 2px 5px #7EC4BD;
                             text-align: center;
                             font-size: 10px;
-
                         }
                     }
                 }
@@ -277,6 +275,22 @@ header {
             margin: auto;
             margin-top: 28px;
             margin-bottom: 25px;
+
+            @include max-screen(700px) {
+                width: 70px;
+            }
+
+            @include max-screen(460px) {
+                width: 60px;
+                margin-top: 20px;
+                margin-bottom: 18px;
+            }
+
+            @include max-screen(320px) {
+                width: 40px;
+                margin-top: 16px;
+                margin-bottom: 14px;
+            }
         }
     }
 
@@ -289,14 +303,39 @@ header {
         text-align: center;
         color: rgba(255, 255, 255, 0.81);
 
+        @include max-screen(700px) {
+            font-size: 13px;
+            line-height: 15px;
+        }
+
+        @include max-screen(460px) {
+            font-size: 12px;
+            line-height: 12px;
+        }
+
         &::before {
             content: "";
             position: absolute;
             background-image: url(../img/IMAGE_x.svg);
+            background-size: cover;
             width: 52px;
             height: 52px;
             left: calc(50% - 52px/2);
             bottom: -25px;
+
+            @include max-screen(700px) {
+                width: 40px;
+                height: 40px;
+                left: calc(50% - 40px/2);
+                bottom: -19px;
+            }
+
+            @include max-screen(320px) {
+                width: 30px;
+                height: 30px;
+                left: calc(50% - 30px/2);
+                bottom: -14px;
+            }
         }
     }
 }
@@ -307,6 +346,10 @@ header {
     padding: 60px 0px;
     text-align: center;
 
+    @include max-screen(700px) {
+        padding: 40px 0px;
+    }
+
     p {
         font-family: 'Vollkorn', serif;
         font-style: normal;
@@ -316,6 +359,15 @@ header {
         text-align: center;
         color: #47474F;
         margin-bottom: 39px;
+
+        @include max-screen(850px) {
+            padding: 0 15px;
+        }
+
+        @include max-screen(700px) {
+            font-size: 13px;
+            line-height: 15px;
+        }
     }
 
     a {
@@ -331,6 +383,12 @@ header {
         border: solid 1px #47474F;
         border-bottom: solid 2px #47474F;
         text-decoration: none;
+
+        @include max-screen(700px) {
+            font-size: 13px;
+            line-height: 15px;
+            padding: 10px 25px 15px;
+        }
     }
 }
 
@@ -339,6 +397,10 @@ header {
     padding: 79px 0px 74px;
     background: $background_color;
     text-align: center;
+
+    @include max-screen(700px) {
+        padding: 39px 0px 34px;
+    }
 
     h2 {
         font-family: $main_font;
@@ -350,6 +412,21 @@ header {
         text-transform: uppercase;
         color: $main_color;
 
+        @include max-screen(700px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @include max-screen(460px) {
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        @include max-screen(320px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
         &::after {
             content: "";
             display: block;
@@ -359,11 +436,48 @@ header {
             margin: auto;
             margin-top: 28px;
             margin-bottom: 43px;
+
+            @include max-screen(700px) {
+                width: 70px;
+            }
+
+            @include max-screen(460px) {
+                width: 60px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            @include max-screen(320px) {
+                width: 40px;
+                margin-top: 16px;
+                margin-bottom: 25px;
+            }
         }
     }
 
     article {
         max-width: 300px;
+        margin: auto;
+
+        @include max-screen(615px) {
+            max-width: 250px;
+        }
+
+        @include max-screen(520px) {
+            max-width: 200px;
+        }
+
+        @include max-screen(415px) {
+            max-width: 180px;
+        }
+
+        @include max-screen(370px) {
+            max-width: 150px;
+        }
+
+        @include max-screen(310px) {
+            max-width: 135px;
+        }
     }
 
     h4 {
@@ -376,6 +490,23 @@ header {
         text-transform: uppercase;
         color: $main_color;
         padding: 38px 0px 20px;
+
+        @include max-screen(700px) {
+            font-size: 13px;
+            line-height: 13px;
+        }
+
+        @include max-screen(370px) {
+            font-size: 12px;
+            line-height: 10px;
+        }
+
+        @include max-screen(330px) {
+            font-size: 11px;
+            line-height: 10px;
+            padding: 25px 0px 15px;
+        }
+
     }
 
     p {
@@ -387,6 +518,22 @@ header {
         line-height: 22px;
         text-align: center;
         color: $main_color;
+        margin: auto;
+
+        @include max-screen(700px) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        @include max-screen(520px) {
+            font-size: 11px;
+            line-height: 14px;
+        }
+
+        @include max-screen(415px) {
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
 }
 
@@ -394,11 +541,107 @@ header {
     background: #F5F5F5;
     padding: 50px 86px;
 
+    @include max-screen(1000px) {
+        padding: 30px 46px;
+    }
+
+    @include max-screen(540px) {
+        padding: 20px 30px;
+    }
+
+    @include max-screen(330px) {
+        padding: 15px 20px;
+    }
+
     img {
         width: 100%;
         display: block;
     }
 }
+
+/* ----------- owl-carousel  ------------------------------*/
+.owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+.owl-item {
+    text-align: center;
+}
+
+.owl-nav {
+    .owl-prev {
+        &:before {
+            font-weight: 900;
+            font-family: "Font Awesome 6 Free";
+            content: "\f053";
+            display: inline-block;
+            font-size: 40px;
+            color: #000000;
+            position: absolute;
+            left: -35px;
+            top: 85px;
+
+            @include max-screen(1000px) {
+                display: none;
+            }
+
+        }
+    }
+
+    .owl-next {
+        &:before {
+            font-weight: 900;
+            font-family: "Font Awesome 6 Free";
+            content: "\f054";
+            display: inline-block;
+            font-size: 40px;
+            color: #000000;
+            position: absolute;
+            right: -35px;
+            top: 85px;
+
+            @include max-screen(1000px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.owl-nav .owl-prev:hover::before,
+.owl-nav .owl-next:hover::before {
+    color: #7EC4BD;
+}
+
+.owl-dots {
+    text-align: center;
+
+    .owl-dot {
+        span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            background-color: #7EC4BD;
+            border-radius: 50%;
+
+            @include max-screen(849px) {
+                width: 7px;
+                height: 7px;
+            }
+
+            @include max-screen(553px) {
+                width: 5px;
+                height: 5px;
+            }
+        }
+    }
+}
+
+.owl-dots .owl-dot.active span {
+    background-color: #91e1d981;
+}
+
 
 /* ----------- section-recent-project ------------------------------*/
 
@@ -406,6 +649,15 @@ header {
     padding-top: 79px;
     background: #F5F5F5;
     padding-bottom: 69px;
+
+    @include max-screen(540px) {
+        padding-top: 39px;
+        padding-bottom: 39px;
+    }
+
+    @include max-screen(320px) {
+        padding: 39px 10px;
+    }
 
     img {
         width: 100%;
@@ -422,6 +674,21 @@ header {
         text-transform: uppercase;
         color: $main_color;
 
+        @include max-screen(700px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @include max-screen(460px) {
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        @include max-screen(320px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
         &::after {
             content: "";
             display: block;
@@ -431,6 +698,22 @@ header {
             margin: auto;
             margin-top: 28px;
             margin-bottom: 43px;
+
+            @include max-screen(700px) {
+                width: 70px;
+            }
+
+            @include max-screen(460px) {
+                width: 60px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            @include max-screen(320px) {
+                width: 40px;
+                margin-top: 16px;
+                margin-bottom: 25px;
+            }
         }
     }
 
@@ -444,6 +727,16 @@ header {
         text-transform: uppercase;
         color: $main_color;
         padding: 19px 0px 4px;
+
+        @include max-screen(700px) {
+            font-size: 13px;
+            line-height: 13px;
+        }
+
+        @include max-screen(370px) {
+            font-size: 12px;
+            line-height: 10px;
+        }
     }
 
     p {
@@ -455,12 +748,32 @@ header {
         text-align: center;
         color: $main_color;
         padding-bottom: 21px;
+
+        @include max-screen(700px) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        @include max-screen(520px) {
+            font-size: 11px;
+            line-height: 14px;
+        }
+
+        @include max-screen(415px) {
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
 
     article {
         max-width: 300px;
+        margin: auto;
         margin-bottom: 20px;
         background-color: $background_color;
+    }
+
+    @include max-screen(925px) {
+        padding: 40px 15px 0px;
     }
 }
 
@@ -474,8 +787,17 @@ header {
     background: $background_color;
     text-align: center;
 
+    @include max-screen(620px) {
+        padding: 40px 0px 34px;
+    }
+
     article {
         max-width: 220px;
+        margin: auto;
+
+        @include max-screen(925px) {
+            padding: 40px 15px 0px;
+        }
     }
 
     h2 {
@@ -488,6 +810,21 @@ header {
         text-transform: uppercase;
         color: $main_color;
 
+        @include max-screen(700px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @include max-screen(460px) {
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        @include max-screen(320px) {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
         &:after {
             content: "";
             display: block;
@@ -497,6 +834,22 @@ header {
             margin: auto;
             margin-top: 28px;
             margin-bottom: 43px;
+
+            @include max-screen(700px) {
+                width: 70px;
+            }
+
+            @include max-screen(460px) {
+                width: 60px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            @include max-screen(320px) {
+                width: 40px;
+                margin-top: 16px;
+                margin-bottom: 25px;
+            }
         }
     }
 
@@ -510,6 +863,16 @@ header {
         text-transform: uppercase;
         color: $main_color;
         padding: 20px 0px 6px;
+
+        @include max-screen(700px) {
+            font-size: 13px;
+            line-height: 13px;
+        }
+
+        @include max-screen(370px) {
+            font-size: 12px;
+            line-height: 10px;
+        }
     }
 
     p {
@@ -521,6 +884,16 @@ header {
         text-align: center;
         color: $main_color;
         padding-bottom: 29px;
+
+        @include max-screen(700px) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        @include max-screen(520px) {
+            font-size: 11px;
+            line-height: 14px;
+        }
     }
 
     ul {
@@ -549,6 +922,10 @@ header {
     padding: 69px 0 98px;
     position: relative;
 
+    @include max-screen(950px) {
+        padding: 69px 10px 98px;
+    }
+
     .quotes {
         img {
             display: block;
@@ -567,6 +944,27 @@ header {
         color: $main_color;
         padding-bottom: 24px;
         max-width: 338px;
+        margin: auto;
+        height: 100px;
+
+        @include max-screen(750px) {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        @include max-screen(571px) {
+            height: 120px;
+        }
+
+        @include max-screen(460px) {
+            font-size: 17px;
+            line-height: 20px;
+        }
+
+        @include max-screen(320px) {
+            font-size: 15px;
+            line-height: 17px;
+        }
 
         &:after {
             content: "";
@@ -589,6 +987,15 @@ header {
         text-align: center;
         text-transform: uppercase;
         color: #ABABAB;
+
+        @include max-screen(460px) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        @include max-screen(356px) {
+            height: 20px;
+        }
     }
 }
 
@@ -601,6 +1008,7 @@ header {
 
     article {
         max-width: 447px;
+        padding: 0 10px;
     }
 }
 
@@ -718,14 +1126,13 @@ header {
 
 .location-mail-heart {
     .cont-lmh {
-        min-height: 65px;
+        min-height: 70px;
     }
 
     img {
         padding-bottom: 26px;
     }
 }
-
 
 /* ----------- footer ------------------------------*/
 footer {
