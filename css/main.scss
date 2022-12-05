@@ -1141,6 +1141,10 @@ footer {
     text-align: center;
     align-items: center;
 
+    @include max-screen(620px) {
+        padding: 50px 10px 45px;
+    }
+
     form {
         .container-footer {
 
@@ -1175,6 +1179,13 @@ footer {
     padding: 0px 31px;
     width: 100%;
 
+    @include max-screen(620px) {
+        font-size: 15px;
+        line-height: 19px;
+        height: 45px;
+        padding: 0px 20px;
+    }
+
     &:focus {
         outline: none;
     }
@@ -1196,6 +1207,13 @@ footer {
     overflow: hidden;
     padding: 18px 31px 88px 31px;
 
+    @include max-screen(620px) {
+        font-size: 15px;
+        line-height: 19px;
+        height: 80px;
+        padding: 12px 20px 60px 20px;
+    }
+
     &:focus {
         outline: none;
     }
@@ -1214,6 +1232,11 @@ footer {
     background-color: transparent;
     padding: 15px 60px 16px;
     transition: 0.5s;
+
+    @include max-screen(620px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
 
     &:hover {
         color: #000000;
@@ -1238,6 +1261,11 @@ footer {
     line-height: 22px;
     text-align: center;
     color: rgba(255, 255, 255, 0.4);
+
+    @include max-screen(620px) {
+        font-size: 13px;
+        line-height: 17px;
+    }
 }
 
 /*Style Placeholder*/
