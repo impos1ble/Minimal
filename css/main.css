@@ -1008,6 +1008,11 @@ header .desktop li a:hover {
   padding: 79px 0 75px;
   text-align: center;
 }
+@media screen and (max-width: 620px) {
+  .let {
+    padding: 40px 0px 34px;
+  }
+}
 .let h2 {
   font-family: "montserratregular";
   font-style: normal;
@@ -1017,6 +1022,24 @@ header .desktop li a:hover {
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+}
+@media screen and (max-width: 700px) {
+  .let h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .let h2 {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .let h2 {
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 .let h2:after {
   content: "";
@@ -1028,8 +1051,37 @@ header .desktop li a:hover {
   margin-top: 28px;
   margin-bottom: 63px;
 }
+@media screen and (max-width: 700px) {
+  .let h2:after {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .let h2:after {
+    width: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .let h2:after {
+    width: 40px;
+    margin-top: 16px;
+    margin-bottom: 25px;
+  }
+}
 .let article {
   max-width: 300px;
+}
+@media screen and (max-width: 550px) {
+  .let article {
+    padding: 10px 80px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .let article {
+    padding: 10px 50px;
+  }
 }
 .let h4 {
   font-family: "montserratregular";
@@ -1041,6 +1093,18 @@ header .desktop li a:hover {
   text-transform: uppercase;
   color: #333333;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 700px) {
+  .let h4 {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .let h4 {
+    font-size: 12px;
+    line-height: 10px;
+  }
 }
 .let .mail li:nth-child(2) {
   margin-bottom: 20px;
@@ -1055,6 +1119,11 @@ header .desktop li a:hover {
 }
 .let .social li {
   padding-bottom: 11px;
+}
+@media screen and (max-width: 700px) {
+  .let .social li {
+    padding-bottom: 7px;
+  }
 }
 .let .social li a {
   color: #212121;
@@ -1084,12 +1153,31 @@ header .desktop li a:hover {
   color: #212121;
   list-style: none;
 }
+@media screen and (max-width: 700px) {
+  .let li {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .let li {
+    font-size: 12px;
+    line-height: 10px;
+  }
+}
 
 .location-mail-heart .cont-lmh {
-  min-height: 70px;
+  min-height: 100px;
 }
-.location-mail-heart img {
-  padding-bottom: 26px;
+@media screen and (max-width: 700px) {
+  .location-mail-heart .cont-lmh {
+    min-height: 80px;
+  }
+}
+
+.l-flex {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* ----------- footer ------------------------------*/

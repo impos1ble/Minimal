@@ -1027,6 +1027,10 @@ header {
     padding: 79px 0 75px;
     text-align: center;
 
+    @include max-screen(620px) {
+        padding: 40px 0px 34px;
+    }
+
     h2 {
         font-family: $main_font;
         font-style: normal;
@@ -1037,6 +1041,21 @@ header {
         text-transform: uppercase;
         color: $main_color;
 
+        @include max-screen(700px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @include max-screen(460px) {
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        @include max-screen(320px) {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
         &:after {
             content: "";
             display: block;
@@ -1046,11 +1065,35 @@ header {
             margin: auto;
             margin-top: 28px;
             margin-bottom: 63px;
+
+            @include max-screen(700px) {
+                width: 70px;
+            }
+
+            @include max-screen(460px) {
+                width: 60px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            @include max-screen(320px) {
+                width: 40px;
+                margin-top: 16px;
+                margin-bottom: 25px;
+            }
         }
     }
 
     article {
         max-width: 300px;
+
+        @include max-screen(550px) {
+            padding: 10px 80px;
+        }
+
+        @include max-screen(350px) {
+            padding: 10px 50px;
+        }
     }
 
     h4 {
@@ -1063,6 +1106,16 @@ header {
         text-transform: uppercase;
         color: $main_color;
         padding-bottom: 20px;
+
+        @include max-screen(700px) {
+            font-size: 13px;
+            line-height: 13px;
+        }
+
+        @include max-screen(370px) {
+            font-size: 12px;
+            line-height: 10px;
+        }
     }
 
     .mail {
@@ -1083,6 +1136,10 @@ header {
 
         li {
             padding-bottom: 11px;
+
+            @include max-screen(700px) {
+                padding-bottom: 7px;
+            }
 
             a {
                 color: #212121;
@@ -1121,17 +1178,32 @@ header {
         text-align: center;
         color: #212121;
         list-style: none;
+
+        @include max-screen(700px) {
+            font-size: 13px;
+            line-height: 13px;
+        }
+
+        @include max-screen(370px) {
+            font-size: 12px;
+            line-height: 10px;
+        }
     }
 }
 
 .location-mail-heart {
     .cont-lmh {
-        min-height: 70px;
-    }
+        min-height: 100px;
 
-    img {
-        padding-bottom: 26px;
+        @include max-screen(700px) {
+            min-height: 80px;
+        }
     }
+}
+
+.l-flex {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* ----------- footer ------------------------------*/
