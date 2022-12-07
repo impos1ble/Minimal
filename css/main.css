@@ -1162,7 +1162,7 @@ header .desktop li a:hover {
 @media screen and (max-width: 370px) {
   .let li {
     font-size: 12px;
-    line-height: 10px;
+    line-height: 14px;
   }
 }
 
